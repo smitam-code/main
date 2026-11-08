@@ -54,12 +54,24 @@ No model retraining is performed on uploaded data.
 # MODEL CONFIGURATION
 # --------------------------------------------------
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 MODEL_FILES = {
-    "Logistic Regression": "model/logistic_regression.joblib",
-    "Decision Tree": "model/decision_tree.joblib",
-    "KNN": "model/knn.joblib",
-    "Naive Bayes": "model/naive_bayes.joblib",
-    "Support Vector Machine": "model/svm.joblib"
+    "Logistic Regression": os.path.join(
+        BASE_DIR, "model", "logistic_regression.joblib"
+    ),
+    "Decision Tree": os.path.join(
+        BASE_DIR, "model", "decision_tree.joblib"
+    ),
+    "KNN": os.path.join(
+        BASE_DIR, "model", "knn.joblib"
+    ),
+    "Naive Bayes": os.path.join(
+        BASE_DIR, "model", "naive_bayes.joblib"
+    ),
+    "Support Vector Machine": os.path.join(
+        BASE_DIR, "model", "svm.joblib"
+    )
 }
 
 @st.cache_resource
