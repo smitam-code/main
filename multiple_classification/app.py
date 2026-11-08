@@ -7,8 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1vXGAaMgl7kSxzS75LiiceoUcFv3xvrmN
 """
 
-!pip install -q streamlit
-!npm install -g localtunnel
+#!pip install -q streamlit
+#!npm install -g localtunnel
 
 import os
 import joblib
