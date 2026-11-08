@@ -184,11 +184,11 @@ The Decision Tree model is used without feature scaling because tree-based algor
 
 
 
-## 3. GitHub Repository Link
+## 3. GitHub Repository Link 
 
 
 
-**GitHub Repository:** [INSERT YOUR GITHUB REPOSITORY URL HERE]
+**GitHub Repository:** https://github.com/smitam-code/main/tree/main/multiple_classification
 
 
 
@@ -198,7 +198,7 @@ The repository contains the following files:
 
 ```text
 
-multiple_classification_project/
+multiple_classification/
 
 │
 
@@ -412,19 +412,31 @@ The following table presents the required evaluation metrics.
 
 
 
-| ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
+Training Logistic Regression...
+Logistic Regression {'Accuracy': 0.9824561403508771, 'AUC': 0.9953703703703703, 'Precision': 0.9861111111111112, 'Recall': 0.9861111111111112, 'F1': 0.9861111111111112, 'MCC': 0.9623015873015873}
 
-|---|---:|---:|---:|---:|---:|---:|
+Training Decision Tree...
+Decision Tree {'Accuracy': 0.9210526315789473, 'AUC': 0.9163359788359788, 'Precision': 0.9565217391304348, 'Recall': 0.9166666666666666, 'F1': 0.9361702127659575, 'MCC': 0.8341403959394523}
 
-| Logistic Regression | TBD | TBD | TBD | TBD | TBD | TBD |
+Training KNN...
+KNN {'Accuracy': 0.956140350877193, 'AUC': 0.9788359788359788, 'Precision': 0.958904109589041, 'Recall': 0.9722222222222222, 'F1': 0.9655172413793104, 'MCC': 0.9054466190452621}
 
-| Decision Tree | TBD | TBD | TBD | TBD | TBD | TBD |
+Training Naive Bayes...
+Naive Bayes {'Accuracy': 0.9298245614035088, 'AUC': 0.9867724867724867, 'Precision': 0.9444444444444444, 'Recall': 0.9444444444444444, 'F1': 0.9444444444444444, 'MCC': 0.8492063492063492}
 
-| KNN | TBD | TBD | TBD | TBD | TBD | TBD |
+Training Support Vector Machine...
+Support Vector Machine {'Accuracy': 0.9824561403508771, 'AUC': 0.9950396825396826, 'Precision': 0.9861111111111112, 'Recall': 0.9861111111111112, 'F1': 0.9861111111111112, 'MCC': 0.9623015873015873}
 
-| Naive Bayes | TBD | TBD | TBD | TBD | TBD | TBD |
+Model comparison:
+                        Accuracy     AUC  Precision  Recall      F1     MCC
+ML Model Name                                                              
+Logistic Regression       0.9825  0.9954     0.9861  0.9861  0.9861  0.9623
+Decision Tree             0.9211  0.9163     0.9565  0.9167  0.9362  0.8341
+KNN                       0.9561  0.9788     0.9589  0.9722  0.9655  0.9054
+Naive Bayes               0.9298  0.9868     0.9444  0.9444  0.9444  0.8492
+Support Vector Machine    0.9825  0.9950     0.9861  0.9861  0.9861  0.9623
 
-| Support Vector Machine | TBD | TBD | TBD | TBD | TBD | TBD |
+Best model based on F1 score: Logistic Regression
 
 
 
@@ -664,7 +676,7 @@ The application also provides a downloadable CSV containing the comparison resul
 
 ```bash
 
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/smitam-code/main.git
 
 ```
 
@@ -676,7 +688,7 @@ git clone YOUR_GITHUB_REPOSITORY_URL
 
 ```bash
 
-cd multiple_classification_project
+cd main\multiple_classification
 
 ```
 
@@ -688,7 +700,7 @@ cd multiple_classification_project
 
 ```bash
 
-pip install -r requirements.txt
+pip install -r requirement.txt
 
 ```
 
